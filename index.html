@@ -3,10 +3,28 @@
 <head>
     <title>홈페이지에 오신 것을 환영합니다.</title>
     <script src="./main.js"></script>
+    <style type="text/css">
+    	* {margin:0px;padding:0px}
+    	#myphoto{
+    		width:980px;
+    		margin:20px auto 0px auto;
+    		padding:20px;
+    		background-color:#888888;
+    		border:1px solid #eeeeee;
+    		text-align:center;
+    	}
+    		#myphoto img{
+    			width:340px;height:340px;
+    			border-top:4px solid #cc33db;
+    			border-left:4px dotted #cc33db;
+    			border-right:4px dashed #aa00b9;
+    			border-bottom:4px double #aa00b9;
+    		}
+    </style>
 </head>
 <body>
-	<h1>hello, world?!!</h1>
-	<img src="./images/me.jpg" style="width:340px;height:340px;"
-	alt="Me!!" title="developers" >
+	<div id="myphoto">
+		<img src="./images/me.jpg" alt="Me!!" title="developers" >
+	</div>
 </body>
 </html>
