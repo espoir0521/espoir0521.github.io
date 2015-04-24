@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>홈페이지에 오신 것을 환영합니다.</title>
-    <script src="./main.js"></script>
-    <style type="text/css">
-    	* {margin:0px;padding:0px}
-    	#myphoto, #myinfo{
-    		width:980px;
-    		margin:20px auto 0px auto;
-    		padding:20px;
-    		background-color:#888888;
-    		border:1px solid #eeeeee;
-    		text-align:center;
-    	}
-    		#myphoto > img{
-    			width:340px;height:340px;
-    			border-top:4px solid #cc33db;
-    			border-left:4px dotted #cc33db;
-    			border-right:4px dashed #aa00b9;
-    			border-bottom:4px double #aa00b9;
-    		}
-    	#myinfo{
-    		border-bottm:10px solid #ff0000
-    	}
-    </style>
+<meta charset="utf8">
+<meta name="description" content="함기훈의 프로필 페이지입니다.">
+<title>홈페이지에 오신 것을 환영합니다.</title>
+<script src="./main.js"></script>
+<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px
+		}
+		
+		#myphoto,#myinfo {
+			width: 980px;
+			margin: 20px auto 0px auto;
+			padding: 20px;
+			background-color: #888888;
+			border: 1px solid #eeeeee;
+			text-align: center;
+		}
+		
+			#myphoto>img {
+				width: 340px;
+				height: 340px;
+				border-top: 4px solid #cc33db;
+				border-left: 4px dotted #cc33db;
+				border-right: 4px dashed #aa00b9;
+				border-bottom: 4px double #aa00b9;
+			}
+		
+		#myinfo {
+			border-bottm: 10px solid #ff0000;
+			font-size:1.5eml;<!--font-size:150%-->;
+			text-align:left;
+		}
+			#myinfo ul{
+				list-style : square;
+				margin-left : 340px;	
+			}
+					#myinfo > ul > li > span.label{
+						text-decoreation:underline;
+					}
+					
+					#myinfo > ul > li > span.content{
+						font-weight:bold;
+					}	
+</style>
 </head>
 <body>
 	<div id="myphoto">
-		<img src="./images/me.jpg" alt="Me!!" title="developers" >
+		<img src="./images/me.jpg" alt="Me!!" title="developers">
 	</div>
 	<div id="myinfo">
-			개인정보
+		<ul>
+			<li><span class="label">이름</span><span class="content">hj</span></li>
+			<li><span class="label">이메일</span><span class="content">weq361@gmail.com</span></li>
+			<li><span class="label">취미</span><span class="content">요리</span></li>
+			<li><span class="label">페이스북</span><span class="content"><a
+					href="facebook.com/your.username" target="_blank"></a></span></li>
+		</ul>
 	</div>
 </body>
 </html>
